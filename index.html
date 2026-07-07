@@ -29,6 +29,9 @@
   /* SECTIONS */
   section{padding:64px 0}
   .kicker{font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--red-deep);font-weight:700;margin-bottom:10px}
+  .kicker-row{display:flex;justify-content:space-between;align-items:baseline}
+  .minimark{font-size:14px;font-weight:800;letter-spacing:3px;color:var(--dark)}
+  .minimark b{color:var(--red)}
   h2{font-size:30px;font-weight:800;margin-bottom:28px}
   .grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
   .card{background:#fff;border:1px solid var(--line);border-top:4px solid var(--red);padding:26px 24px;border-radius:4px}
@@ -80,9 +83,10 @@
   <div class="wrap hero">
     <div class="brand"><div class="mark">AMANTHOS</div><div class="sub">Group &nbsp;|&nbsp; Real Estate</div></div>
     <h1>Immobilien. Diskret vermittelt, <em>messbar verwertet.</em></h1>
-    <p class="lead">Die Amanthos Group ist eine eigentümergeführte Immobiliengesellschaft mit Standorten in Luzern und Stuttgart. Wir begleiten Eigentümer, Investoren und Nutzer bei Off-Market-Transaktionen, Vermietung, Verkauf und der Repositionierung von Gewerbe- und Wohnliegenschaften – in der Schweiz und in Deutschland.</p>
+    <p class="lead">Die Amanthos Group ist eine eigentümergeführte Immobiliengesellschaft mit Standorten in Luzern und Stuttgart. Unser Mehrwert entsteht durch Fokus: nachgefragte Nutzungen – Retail, Hospitality und Office in guten Lagen. Wir begleiten Eigentümer, Investoren und Nutzer bei Off-Market-Transaktionen, Vermietung, Verkauf und Repositionierung – in der Schweiz und in Deutschland.</p>
     <div class="facts">
       <div class="fact"><b>CH &amp; DE</b><span>Luzern · Stuttgart</span></div>
+      <div class="fact"><b>Retail · Hospitality · Office</b><span>Fokus auf nachgefragte Nutzungen</span></div>
       <div class="fact"><b>25'000+ m²</b><span>vermittelte Flächen</span></div>
       <div class="fact"><b>Off-Market</b><span>eigenes Netzwerk</span></div>
       <div class="fact"><b>Inhabergeführt</b><span>direkte Verantwortung</span></div>
@@ -92,7 +96,20 @@
 
 <section>
   <div class="wrap">
-    <div class="kicker">Unser Fokus</div>
+    <div class="kicker-row"><div class="kicker">Fast Facts</div><div class="minimark">AMANTHOS<b>.</b></div></div>
+    <h2>Die Amanthos Group auf einen Blick.</h2>
+    <div class="grid4">
+      <div class="card"><h3>Eigentümergeführt</h3><p>Immobiliengesellschaft mit Standorten in Luzern und Stuttgart – kurze Wege, direkte Verantwortung der Partner, aktiv in der Schweiz und in Deutschland.</p></div>
+      <div class="card"><h3>Fokus auf nachgefragte Nutzungen</h3><p>Retail, Hospitality und Office in guten Lagen – wir konzentrieren uns auf Nutzungen mit belastbarer Nachfrage. Daraus entsteht messbarer Mehrwert für Eigentümer und Investoren.</p></div>
+      <div class="card"><h3>Betreiber-Know-how</h3><p>Eigene Hospitality-Sparte mit Hotels und Serviced Apartments in der Schweiz – wir kennen die Nutzerseite aus dem eigenen Betrieb und wissen, was Flächen leisten müssen.</p></div>
+      <div class="card"><h3>25'000+ m² Track Record</h3><p>Vermittelte Flächen in Deutschland und der Schweiz – überwiegend Off-Market, über das eigene Netzwerk aus Investoren, Betreibern und Nutzern.</p></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="kicker-row"><div class="kicker">Unser Fokus</div><div class="minimark">AMANTHOS<b>.</b></div></div>
     <h2>Vier Disziplinen, ein Anspruch: greifbarer Mehrwert.</h2>
     <div class="grid4">
       <div class="card"><h3>Off-Market-Transaktionen</h3><p>Diskrete Vermittlung von Anlageliegenschaften ausserhalb des öffentlichen Marktes – direkt zwischen Eigentümern und geprüften Investoren aus unserem Netzwerk aus Versicherungen, Anlagestiftungen, Family Offices und Immobiliengesellschaften.</p></div>
@@ -105,7 +122,7 @@
 
 <section class="refs">
   <div class="wrap">
-    <div class="kicker">Track Record</div>
+    <div class="kicker-row"><div class="kicker">Track Record</div><div class="minimark">AMANTHOS<b>.</b></div></div>
     <h2>Referenz-Transaktionen (Auswahl)</h2>
     <div class="ref-cols">
       <div>
@@ -113,15 +130,16 @@
         <table>
           <tr><td class="who">Saturn</td><td class="where">Kaiserstrasse 211, Karlsruhe</td><td class="size">5'500 m²</td></tr>
           <tr><td class="who">Decathlon</td><td class="where">Kaiserstrasse 217, Karlsruhe</td><td class="size">4'000 m²</td></tr>
-          <tr><td class="who">Bremer Bau</td><td class="where">Stuttgart-Weilimdorf</td><td class="size">3'000 m²</td></tr>
           <tr><td class="who">Aldi</td><td class="where">Berolina-Haus, Stuttgart-Degerloch</td><td class="size">1'800 m²</td></tr>
           <tr><td class="who">Decathlon</td><td class="where">Interlaken, Schweiz – 1A-Lage</td><td class="size">ca. 800 m²</td></tr>
+          <tr><td class="who">Ayverdi's</td><td class="where">Gastronomie, Schweiz</td><td class="size">&nbsp;</td></tr>
           <tr><td class="who">Landmark-Vermietung</td><td class="where">Bahnhofplatz 3, Zürich HB, Schweiz</td><td class="size">ca. 500 m²</td></tr>
         </table>
       </div>
       <div>
         <h3>Büro &amp; Gewerbe</h3>
         <table>
+          <tr><td class="who">Bremer Bau</td><td class="where">Stuttgart-Weilimdorf</td><td class="size">3'000 m²</td></tr>
           <tr><td class="who">ProAir</td><td class="where">Gottlieb-Manz-Strasse, Stuttgart</td><td class="size">1'500 m²</td></tr>
           <tr><td class="who">SSB</td><td class="where">Zeppelin Carré, Stuttgart</td><td class="size">1'300 m²</td></tr>
           <tr><td class="who">ZWP Ingenieure</td><td class="where">STEP Areal, Stuttgart</td><td class="size">880 m²</td></tr>
@@ -135,7 +153,10 @@
       <div>
         <h3>Hospitality &amp; Spezialflächen</h3>
         <table>
+          <tr><td class="who">limehome</td><td class="where">Projekt Porschestrasse, Stuttgart-Zuffenhausen</td><td class="size">ca. 120 Keys</td></tr>
           <tr><td class="who">B&amp;B Hotels</td><td class="where">Herzogenaurach</td><td class="size">120 Zimmer</td></tr>
+          <tr><td class="who">limehome</td><td class="where">Projekt Göppingen</td><td class="size">ca. 60 Keys</td></tr>
+          <tr><td class="who">limehome</td><td class="where">Projekt Nürtingen</td><td class="size">ca. 40 Keys</td></tr>
           <tr><td class="who">Bob W</td><td class="where">Theodor-Heuss-Strasse, Stuttgart</td><td class="size">&nbsp;</td></tr>
           <tr><td class="who">Bob W</td><td class="where">Querstrasse, Frankfurt a. M.</td><td class="size">&nbsp;</td></tr>
           <tr><td class="who">Myspa</td><td class="where">Mannheim</td><td class="size">1'800 m²</td></tr>
@@ -149,7 +170,34 @@
 
 <section>
   <div class="wrap">
-    <div class="kicker">Arbeitsweise</div>
+    <div class="kicker-row"><div class="kicker">Team</div><div class="minimark">AMANTHOS<b>.</b></div></div>
+    <h2>Milestones pro Kopf.</h2>
+    <div class="ref-cols">
+      <div>
+        <h3>Bosko Trifunovic</h3>
+        <p style="font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--red-deep);font-weight:700;margin:8px 0 10px">CEO &amp; Co-Founder</p>
+        <p style="font-size:14px;color:var(--muted);margin-bottom:10px"><b style="color:var(--ink)">Werdegang:</b> [Stationen ergänzen]</p>
+        <p style="font-size:14px;color:var(--muted)"><b style="color:var(--ink)">Deals (Auswahl):</b> [Deals ergänzen]</p>
+      </div>
+      <div>
+        <h3>Kaito Weingart</h3>
+        <p style="font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--red-deep);font-weight:700;margin:8px 0 10px">Partner</p>
+        <p style="font-size:14px;color:var(--muted);margin-bottom:10px"><b style="color:var(--ink)">Werdegang:</b> [Stationen ergänzen]</p>
+        <p style="font-size:14px;color:var(--muted)"><b style="color:var(--ink)">Deals (Auswahl):</b> [Deals ergänzen]</p>
+      </div>
+      <div>
+        <h3>Julian [Nachname]</h3>
+        <p style="font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--red-deep);font-weight:700;margin:8px 0 10px">[Rolle]</p>
+        <p style="font-size:14px;color:var(--muted);margin-bottom:10px"><b style="color:var(--ink)">Werdegang:</b> [Stationen ergänzen]</p>
+        <p style="font-size:14px;color:var(--muted)"><b style="color:var(--ink)">Deals (Auswahl):</b> [Deals ergänzen]</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="refs">
+  <div class="wrap">
+    <div class="kicker-row"><div class="kicker">Arbeitsweise</div><div class="minimark">AMANTHOS<b>.</b></div></div>
     <h2>Vom ersten Gespräch bis zum Abschluss.</h2>
     <div class="steps">
       <div class="step"><div class="no">01</div><h3>Analyse &amp; Positionierung</h3><p>Bewertung, Marktanalyse und klare Positionierung der Liegenschaft – als Grundlage jeder Transaktion.</p></div>
