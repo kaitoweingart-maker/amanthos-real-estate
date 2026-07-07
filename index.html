@@ -3,65 +3,75 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Amanthos Group – Real Estate</title>
-<meta name="description" content="Amanthos Group – eigentümergeführte Immobiliengesellschaft. Off-Market-Transaktionen, Vermietung, Verkauf und Repositionierung in der Schweiz und Deutschland.">
+<title>Amanthos International – Real Estate</title>
+<meta name="description" content="Amanthos International – eigentümergeführte Immobiliengesellschaft. Off-Market-Transaktionen, Vermietung, Verkauf und Repositionierung in der Schweiz und Deutschland.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
-    --dark:#232d36; --dark2:#2b3540; --red:#c94f4f; --red-deep:#b03a3a;
-    --paper:#f7f6f3; --ink:#1c242b; --muted:#6b7681; --line:#e3e0da; --gold:#c9a55a;
+    --navy:#2e302d; --navy-deep:#1a1c19; --navy-light:#3a3c38;
+    --gold:#ce5657; --gold-dark:#9B4738;
+    --off:#f5f4f2; --ink:#1a1a1a; --muted:#555555; --tert:#888888; --line:#e3dfda;
+    --serif:'Cormorant Garamond',Georgia,'Times New Roman',serif;
+    --sans:'Source Sans 3','Helvetica Neue',Arial,sans-serif;
   }
   *{margin:0;padding:0;box-sizing:border-box}
-  body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6}
+  body{font-family:var(--sans);color:var(--ink);background:var(--off);line-height:1.6;font-weight:400}
   .wrap{max-width:1040px;margin:0 auto;padding:0 32px}
   /* HERO */
-  header{background:var(--dark);color:#fff;border-bottom:6px solid var(--red)}
-  .hero{padding:72px 0 64px}
-  .brand{display:flex;align-items:baseline;gap:14px;margin-bottom:48px}
-  .brand .mark{font-size:30px;font-weight:800;letter-spacing:4px}
-  .brand .mark span{color:var(--red)}
-  .brand .sub{font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#9aa7b2}
-  h1{font-size:44px;font-weight:800;line-height:1.15;max-width:720px}
-  h1 em{font-style:normal;color:var(--red)}
-  .hero p.lead{margin-top:22px;font-size:18px;color:#c5cdd4;max-width:680px}
-  .hero .facts{display:flex;gap:40px;margin-top:44px;flex-wrap:wrap}
-  .hero .fact b{display:block;font-size:22px}
-  .hero .fact span{font-size:12.5px;letter-spacing:1.5px;text-transform:uppercase;color:#9aa7b2}
+  header{background:var(--navy);color:#fff}
+  .hero{padding:64px 0 60px}
+  .brand{margin-bottom:56px}
+  .brand .mark{font-family:var(--serif);font-size:34px;font-weight:500;letter-spacing:10px;color:#fff}
+  .brand .sub{font-family:var(--serif);font-size:13px;letter-spacing:8px;color:#b3afa8;margin-top:2px}
+  .kicker{font-size:12px;letter-spacing:3.5px;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:14px}
+  h1{font-family:var(--serif);font-size:52px;font-weight:500;line-height:1.12;max-width:760px}
+  h1 em{font-style:italic;color:var(--gold)}
+  .hero p.lead{margin-top:24px;font-size:17px;font-weight:300;color:#c9c6c0;max-width:700px;line-height:1.7}
+  .hero .facts{display:flex;gap:44px;margin-top:48px;flex-wrap:wrap;border-top:1px solid #4a4c47;padding-top:28px}
+  .hero .fact b{display:block;font-family:var(--serif);font-size:24px;font-weight:600}
+  .hero .fact span{font-size:11.5px;letter-spacing:2px;text-transform:uppercase;color:#a5a29b}
   /* SECTIONS */
-  section{padding:64px 0}
-  .kicker{font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--red-deep);font-weight:700;margin-bottom:10px}
+  section{padding:72px 0}
   .kicker-row{display:flex;justify-content:space-between;align-items:baseline}
-  .minimark{font-size:14px;font-weight:800;letter-spacing:3px;color:var(--dark)}
-  .minimark b{color:var(--red)}
-  h2{font-size:30px;font-weight:800;margin-bottom:28px}
+  .minimark{font-family:var(--serif);font-size:15px;font-weight:600;letter-spacing:5px;color:var(--navy)}
+  h2{font-family:var(--serif);font-size:36px;font-weight:500;margin-bottom:30px;color:var(--navy-deep)}
   .grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
-  .card{background:#fff;border:1px solid var(--line);border-top:4px solid var(--red);padding:26px 24px;border-radius:4px}
-  .card h3{font-size:17px;margin-bottom:10px}
-  .card p{font-size:14px;color:var(--muted)}
+  .card{background:#fff;border:1px solid var(--line);border-top:2px solid var(--gold);padding:28px 26px}
+  .card h3{font-family:var(--serif);font-size:20px;font-weight:600;margin-bottom:10px;color:var(--navy-deep)}
+  .card p{font-size:14px;color:var(--muted);font-weight:300;line-height:1.65}
   /* REFERENCES */
   .refs{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
   .ref-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:36px}
   @media(max-width:760px){.ref-cols{grid-template-columns:1fr}}
-  .ref-cols h3{font-size:14px;letter-spacing:2.5px;text-transform:uppercase;color:var(--red-deep);border-bottom:2px solid var(--dark);padding-bottom:10px;margin-bottom:6px}
+  .ref-cols h3{font-size:13px;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold-dark);border-bottom:1px solid var(--navy);padding-bottom:10px;margin-bottom:6px;font-weight:600}
   table{width:100%;border-collapse:collapse;font-size:14.5px}
   td{padding:11px 4px;border-bottom:1px solid var(--line);vertical-align:top}
-  td.who{font-weight:700}
-  td.where{color:var(--muted)}
-  td.size{text-align:right;white-space:nowrap;font-weight:700;color:var(--dark)}
-  .note{font-size:12px;color:var(--muted);margin-top:18px}
+  td.who{font-weight:600}
+  td.where{color:var(--tert);font-weight:300}
+  td.size{text-align:right;white-space:nowrap;font-weight:600;color:var(--navy)}
+  .note{font-size:12px;color:var(--tert);margin-top:18px;font-weight:300}
+  /* TEAM */
+  .person h3{font-family:var(--serif);font-size:22px;font-weight:600;color:var(--navy-deep)}
+  .person .role{font-size:11.5px;letter-spacing:2px;text-transform:uppercase;color:var(--gold-dark);font-weight:600;margin:6px 0 12px}
+  .person p{font-size:14px;color:var(--muted);font-weight:300;margin-bottom:10px}
+  .person p b{color:var(--ink);font-weight:600}
   /* APPROACH */
   .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px}
-  .step{padding:24px;background:var(--dark);color:#fff;border-radius:4px}
-  .step .no{font-size:13px;color:var(--red);font-weight:800;letter-spacing:2px}
-  .step h3{font-size:16px;margin:8px 0 8px}
-  .step p{font-size:13.5px;color:#b9c2ca}
+  .step{padding:26px 24px;background:var(--navy);color:#fff}
+  .step .no{font-family:var(--serif);font-size:15px;color:var(--gold);font-weight:600;letter-spacing:2px;font-style:italic}
+  .step h3{font-family:var(--serif);font-size:19px;font-weight:600;margin:8px 0 8px}
+  .step p{font-size:13.5px;color:#b3afa8;font-weight:300;line-height:1.6}
   /* CONTACT */
-  footer{background:var(--dark2);color:#fff;border-top:6px solid var(--red);padding:56px 0}
+  footer{background:var(--navy-deep);color:#fff;padding:64px 0}
+  footer h2{color:#fff}
   .contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:32px;margin-top:26px}
-  .contact-grid h3{font-size:16px;margin-bottom:4px}
-  .contact-grid .role{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--red);margin-bottom:10px}
-  .contact-grid p{font-size:14px;color:#c5cdd4}
+  .contact-grid h3{font-family:var(--serif);font-size:21px;font-weight:600;margin-bottom:4px}
+  .contact-grid .role{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:10px;font-weight:600}
+  .contact-grid p{font-size:14px;color:#c9c6c0;font-weight:300}
   .contact-grid a{color:#fff;text-decoration:none}
-  .legal{margin-top:44px;padding-top:20px;border-top:1px solid #3d4954;font-size:12px;color:#8b97a2}
+  .legal{margin-top:48px;padding-top:22px;border-top:1px solid #3a3c38;font-size:12px;color:#8a877f;font-weight:300}
   /* PRINT */
   @page{size:A4;margin:0}
   @media print{
@@ -81,9 +91,10 @@
 
 <header>
   <div class="wrap hero">
-    <div class="brand"><div class="mark">AMANTHOS</div><div class="sub">Group &nbsp;|&nbsp; Real Estate</div></div>
+    <div class="brand"><div class="mark">AMANTHOS</div><div class="sub">INTERNATIONAL</div></div>
+    <div class="kicker">Real Estate</div>
     <h1>Immobilien. Diskret vermittelt, <em>messbar verwertet.</em></h1>
-    <p class="lead">Die Amanthos Group ist eine eigentümergeführte Immobiliengesellschaft mit Standorten in Luzern und Stuttgart. Unser Mehrwert entsteht durch Fokus: nachgefragte Nutzungen – Retail, Hospitality und Office in guten Lagen. Wir begleiten Eigentümer, Investoren und Nutzer bei Off-Market-Transaktionen, Vermietung, Verkauf und Repositionierung – in der Schweiz und in Deutschland.</p>
+    <p class="lead">Die Amanthos International ist eine eigentümergeführte Immobiliengesellschaft mit Standorten in Luzern und Stuttgart. Unser Mehrwert entsteht durch Fokus: nachgefragte Nutzungen – Retail, Hospitality und Office in guten Lagen. Wir begleiten Eigentümer, Investoren und Nutzer bei Off-Market-Transaktionen, Vermietung, Verkauf und Repositionierung – in der Schweiz und in Deutschland.</p>
     <div class="facts">
       <div class="fact"><b>CH &amp; DE</b><span>Luzern · Stuttgart</span></div>
       <div class="fact"><b>Retail · Hospitality · Office</b><span>Fokus auf nachgefragte Nutzungen</span></div>
@@ -96,8 +107,8 @@
 
 <section>
   <div class="wrap">
-    <div class="kicker-row"><div class="kicker">Fast Facts</div><div class="minimark">AMANTHOS<b>.</b></div></div>
-    <h2>Die Amanthos Group auf einen Blick.</h2>
+    <div class="kicker-row"><div class="kicker">Fast Facts</div><div class="minimark">AMANTHOS</div></div>
+    <h2>Die Amanthos International auf einen Blick.</h2>
     <div class="grid4">
       <div class="card"><h3>Eigentümergeführt</h3><p>Immobiliengesellschaft mit Standorten in Luzern und Stuttgart – kurze Wege, direkte Verantwortung der Partner, aktiv in der Schweiz und in Deutschland.</p></div>
       <div class="card"><h3>Fokus auf nachgefragte Nutzungen</h3><p>Retail, Hospitality und Office in guten Lagen – wir konzentrieren uns auf Nutzungen mit belastbarer Nachfrage. Daraus entsteht messbarer Mehrwert für Eigentümer und Investoren.</p></div>
@@ -109,7 +120,7 @@
 
 <section style="padding-top:0">
   <div class="wrap">
-    <div class="kicker-row"><div class="kicker">Unser Fokus</div><div class="minimark">AMANTHOS<b>.</b></div></div>
+    <div class="kicker-row"><div class="kicker">Unser Fokus</div><div class="minimark">AMANTHOS</div></div>
     <h2>Vier Disziplinen, ein Anspruch: greifbarer Mehrwert.</h2>
     <div class="grid4">
       <div class="card"><h3>Off-Market-Transaktionen</h3><p>Diskrete Vermittlung von Anlageliegenschaften ausserhalb des öffentlichen Marktes – direkt zwischen Eigentümern und geprüften Investoren aus unserem Netzwerk aus Versicherungen, Anlagestiftungen, Family Offices und Immobiliengesellschaften.</p></div>
@@ -122,7 +133,7 @@
 
 <section class="refs">
   <div class="wrap">
-    <div class="kicker-row"><div class="kicker">Track Record</div><div class="minimark">AMANTHOS<b>.</b></div></div>
+    <div class="kicker-row"><div class="kicker">Track Record</div><div class="minimark">AMANTHOS</div></div>
     <h2>Referenz-Transaktionen (Auswahl)</h2>
     <div class="ref-cols">
       <div>
@@ -163,32 +174,32 @@
         </table>
       </div>
     </div>
-    <p class="note">Auszug aus abgeschlossenen Vermittlungs- und Beratungsmandaten der Amanthos Group in der Schweiz und in Deutschland.</p>
+    <p class="note">Auszug aus abgeschlossenen Vermittlungs- und Beratungsmandaten der Amanthos International in der Schweiz und in Deutschland.</p>
   </div>
 </section>
 
 <section>
   <div class="wrap">
-    <div class="kicker-row"><div class="kicker">Team</div><div class="minimark">AMANTHOS<b>.</b></div></div>
+    <div class="kicker-row"><div class="kicker">Team</div><div class="minimark">AMANTHOS</div></div>
     <h2>Milestones pro Kopf.</h2>
     <div class="ref-cols">
-      <div>
+      <div class="person">
         <h3>Bosko Trifunovic</h3>
-        <p style="font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--red-deep);font-weight:700;margin:8px 0 10px">CEO &amp; Co-Founder</p>
-        <p style="font-size:14px;color:var(--muted);margin-bottom:10px"><b style="color:var(--ink)">Werdegang:</b> [Stationen ergänzen]</p>
-        <p style="font-size:14px;color:var(--muted)"><b style="color:var(--ink)">Deals (Auswahl):</b> [Deals ergänzen]</p>
+        <div class="role">CEO &amp; Co-Founder</div>
+        <p><b>Werdegang:</b> [Stationen ergänzen]</p>
+        <p><b>Deals (Auswahl):</b> [Deals ergänzen]</p>
       </div>
-      <div>
+      <div class="person">
         <h3>Kaito Weingart</h3>
-        <p style="font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--red-deep);font-weight:700;margin:8px 0 10px">Partner</p>
-        <p style="font-size:14px;color:var(--muted);margin-bottom:10px"><b style="color:var(--ink)">Werdegang:</b> [Stationen ergänzen]</p>
-        <p style="font-size:14px;color:var(--muted)"><b style="color:var(--ink)">Deals (Auswahl):</b> [Deals ergänzen]</p>
+        <div class="role">Partner</div>
+        <p><b>Werdegang:</b> [Stationen ergänzen]</p>
+        <p><b>Deals (Auswahl):</b> [Deals ergänzen]</p>
       </div>
-      <div>
+      <div class="person">
         <h3>Julian [Nachname]</h3>
-        <p style="font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--red-deep);font-weight:700;margin:8px 0 10px">[Rolle]</p>
-        <p style="font-size:14px;color:var(--muted);margin-bottom:10px"><b style="color:var(--ink)">Werdegang:</b> [Stationen ergänzen]</p>
-        <p style="font-size:14px;color:var(--muted)"><b style="color:var(--ink)">Deals (Auswahl):</b> [Deals ergänzen]</p>
+        <div class="role">[Rolle]</div>
+        <p><b>Werdegang:</b> [Stationen ergänzen]</p>
+        <p><b>Deals (Auswahl):</b> [Deals ergänzen]</p>
       </div>
     </div>
   </div>
@@ -196,7 +207,7 @@
 
 <section class="refs">
   <div class="wrap">
-    <div class="kicker-row"><div class="kicker">Arbeitsweise</div><div class="minimark">AMANTHOS<b>.</b></div></div>
+    <div class="kicker-row"><div class="kicker">Arbeitsweise</div><div class="minimark">AMANTHOS</div></div>
     <h2>Vom ersten Gespräch bis zum Abschluss.</h2>
     <div class="steps">
       <div class="step"><div class="no">01</div><h3>Analyse &amp; Positionierung</h3><p>Bewertung, Marktanalyse und klare Positionierung der Liegenschaft – als Grundlage jeder Transaktion.</p></div>
@@ -209,8 +220,8 @@
 
 <footer>
   <div class="wrap">
-    <div class="kicker" style="color:var(--red)">Kontakt</div>
-    <h2 style="color:#fff">Sprechen wir über Ihre Liegenschaft.</h2>
+    <div class="kicker">Kontakt</div>
+    <h2>Kontaktpersonen.</h2>
     <div class="contact-grid">
       <div>
         <h3>Bosko Trifunovic</h3><div class="role">CEO &amp; Co-Founder · Erstkontakt</div>
