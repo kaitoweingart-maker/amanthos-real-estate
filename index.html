@@ -12,7 +12,7 @@
   :root{
     --navy:#2e302d; --navy-deep:#1a1c19; --navy-light:#3a3c38;
     --gold:#ce5657; --gold-dark:#9B4738;
-    --off:#f5f4f2; --ink:#1a1a1a; --muted:#555555; --tert:#888888; --line:#e3dfda;
+    --off:#f5f4f2; --ink:#1a1a1a; --muted:#3d3d3d; --tert:#5f5f5f; --line:#e3dfda;
     --serif:'Cormorant Garamond',Georgia,'Times New Roman',serif;
     --sans:'Source Sans 3','Helvetica Neue',Arial,sans-serif;
   }
@@ -40,7 +40,7 @@
   .grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
   .card{background:#fff;border:1px solid var(--line);border-top:2px solid var(--gold);padding:28px 26px}
   .card h3{font-family:var(--serif);font-size:20px;font-weight:600;margin-bottom:10px;color:var(--navy-deep)}
-  .card p{font-size:14px;color:var(--muted);font-weight:300;line-height:1.65}
+  .card p{font-size:14px;color:var(--muted);font-weight:400;line-height:1.65}
   /* REFERENCES */
   .refs{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
   .ref-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:36px}
@@ -49,13 +49,13 @@
   table{width:100%;border-collapse:collapse;font-size:14.5px}
   td{padding:11px 4px;border-bottom:1px solid var(--line);vertical-align:top}
   td.who{font-weight:600}
-  td.where{color:var(--tert);font-weight:300}
+  td.where{color:var(--tert);font-weight:400}
   td.size{text-align:right;white-space:nowrap;font-weight:600;color:var(--navy)}
-  .note{font-size:12px;color:var(--tert);margin-top:18px;font-weight:300}
+  .note{font-size:12px;color:var(--tert);margin-top:18px;font-weight:400}
   /* TEAM */
   .person h3{font-family:var(--serif);font-size:22px;font-weight:600;color:var(--navy-deep)}
   .person .role{font-size:11.5px;letter-spacing:2px;text-transform:uppercase;color:var(--gold-dark);font-weight:600;margin:6px 0 12px}
-  .person p{font-size:14px;color:var(--muted);font-weight:300;margin-bottom:10px}
+  .person p{font-size:14px;color:var(--muted);font-weight:400;margin-bottom:10px}
   .person p b{color:var(--ink);font-weight:600}
   /* APPROACH */
   .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px}
@@ -182,24 +182,28 @@
   <div class="wrap">
     <div class="kicker-row"><div class="kicker">Team</div><div class="minimark">AMANTHOS</div></div>
     <h2>Milestones pro Kopf.</h2>
-    <div class="ref-cols">
+    <div class="ref-cols" style="grid-template-columns:1fr 1fr">
       <div class="person">
         <h3>Bosko Trifunovic</h3>
         <div class="role">CEO &amp; Co-Founder</div>
-        <p><b>Werdegang:</b> [Stationen ergänzen]</p>
-        <p><b>Deals (Auswahl):</b> [Deals ergänzen]</p>
+        <p><b>Werdegang:</b> Background in Finanzen, 15 Jahre in der Immobilienbranche.</p>
+        <p><b>Deals (Auswahl):</b></p>
+        <ul style="margin:6px 0 0 20px;font-size:14px;color:var(--muted)">
+          <li>limehome – Stuttgart-Zuffenhausen, Göppingen, Nürtingen (ca. 220 Keys)</li>
+          <li>B&amp;B Hotels – Herzogenaurach (120 Zimmer)</li>
+          <li>Bob W – Stuttgart &amp; Frankfurt a. M.</li>
+          <li>Myspa – Mannheim &amp; Stuttgart (3'300 m²)</li>
+        </ul>
       </div>
       <div class="person">
         <h3>Kaito Weingart</h3>
         <div class="role">Partner</div>
-        <p><b>Werdegang:</b> [Stationen ergänzen]</p>
-        <p><b>Deals (Auswahl):</b> [Deals ergänzen]</p>
-      </div>
-      <div class="person">
-        <h3>Julian [Nachname]</h3>
-        <div class="role">[Rolle]</div>
-        <p><b>Werdegang:</b> [Stationen ergänzen]</p>
-        <p><b>Deals (Auswahl):</b> [Deals ergänzen]</p>
+        <p><b>Werdegang:</b> Background in Steuern, 5 Jahre in der Immobilienbranche.</p>
+        <p><b>Deals (Auswahl):</b></p>
+        <ul style="margin:6px 0 0 20px;font-size:14px;color:var(--muted)">
+          <li>Ayverdi's – Landmark-Vermietung Bahnhofplatz 3, Zürich HB</li>
+          <li>Mehr als 40 Retail-Abschlüsse in der Schweiz an 1A-Lagen</li>
+        </ul>
       </div>
     </div>
   </div>
