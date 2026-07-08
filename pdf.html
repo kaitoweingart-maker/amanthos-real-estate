@@ -36,8 +36,8 @@
   .cover h1{font-family:var(--serif);font-size:42pt;font-weight:500;line-height:1.1;max-width:220mm}
   .cover h1 em{font-style:italic;color:var(--gold)}
   .cover p.lead{margin-top:7mm;font-size:12pt;font-weight:300;color:#c9c6c0;max-width:210mm;line-height:1.6}
-  .cover .facts{display:flex;gap:11mm;margin-top:11mm;margin-bottom:4mm;border-top:1px solid #4a4c47;padding-top:6mm}
-  .cover .fact b{display:block;font-family:var(--serif);font-size:14.5pt;font-weight:600;white-space:nowrap}
+  .cover .facts{display:flex;gap:7mm;margin-top:11mm;margin-bottom:4mm;border-top:1px solid #4a4c47;padding-top:6mm;justify-content:space-between}
+  .cover .fact b{display:block;font-family:var(--serif);font-size:12.5pt;font-weight:600;white-space:nowrap}
   .cover .fact span{font-size:7.5pt;letter-spacing:1.5px;text-transform:uppercase;color:#a5a29b}
   /* CARDS */
   .grid2x2{display:grid;grid-template-columns:1fr 1fr;gap:7mm}
@@ -54,6 +54,8 @@
   td.size{text-align:right;white-space:nowrap;font-weight:600;color:var(--navy);width:22%}
   .note{font-size:8.5pt;color:var(--tert);margin-top:4mm;font-weight:400}
   /* TEAM */
+  .avatar{width:24mm;height:24mm;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:13pt;letter-spacing:1px;margin-bottom:4mm;overflow:hidden}
+  .avatar img{width:100%;height:100%;object-fit:cover}
   .person h3{font-family:var(--serif);font-size:16pt;font-weight:600;color:var(--navy-deep)}
   .person .role{font-size:8.5pt;letter-spacing:2px;text-transform:uppercase;color:var(--gold-dark);font-weight:600;margin:2.5mm 0 4mm}
   .person p{font-size:10pt;color:var(--muted);line-height:1.55;margin-bottom:4mm;font-weight:400}
@@ -82,11 +84,12 @@
     <div><div class="mark">AMANTHOS</div><div class="sub">INTERNATIONAL</div></div>
     <div class="kicker">Real Estate</div>
     <h1>Immobilien. Diskret vermittelt, <em>messbar verwertet.</em></h1>
-    <p class="lead">Eigentümergeführte Immobiliengesellschaft mit Standorten in Stuttgart und Luzern. Unser Mehrwert entsteht durch Fokus: nachgefragte Nutzungen – Retail, Hospitality und Office in guten Lagen. Wir begleiten Eigentümer, Investoren und Nutzer bei Off-Market-Transaktionen, Vermietung, Verkauf und Repositionierung – in Deutschland und der Schweiz.</p>
+    <p class="lead">Eigentümergeführte Immobiliengesellschaft mit Standorten in Stuttgart und Luzern. Unser Mehrwert entsteht durch Fokus: nachgefragte Nutzungen – Retail, Hospitality und innerstädtische Office-Flächen in 1A-Lagen. In der Vermietung sind wir deutschlandweit an den Top-A-Standorten tätig – Hamburg, Berlin, München, Stuttgart. Wir begleiten Eigentümer, Investoren und Nutzer bei Off-Market-Transaktionen, Vermietung, Verkauf und Repositionierung – in Deutschland und der Schweiz.</p>
     <div class="facts">
       <div class="fact"><b>DE &amp; CH</b><span>Stuttgart · Luzern</span></div>
-      <div class="fact"><b>Retail · Hospitality · Office</b><span>Fokus auf nachgefragte Nutzungen</span></div>
-      <div class="fact"><b>25'000+ m²</b><span>vermittelte Flächen</span></div>
+      <div class="fact"><b>Retail · Hospitality · Office</b><span>innerstädtisch · 1A-Lagen</span></div>
+      <div class="fact"><b>200'000+ m²</b><span>vermitteltes Flächenvolumen</span></div>
+      <div class="fact"><b>1'000+ Keys</b><span>Serviced Apartments &amp; Hotels</span></div>
       <div class="fact"><b>Off-Market</b><span>eigenes Netzwerk</span></div>
       <div class="fact"><b>Inhabergeführt</b><span>direkte Verantwortung</span></div>
     </div>
@@ -100,10 +103,10 @@
     <div class="kicker">Fast Facts</div>
     <h2>Die Amanthos International auf einen Blick.</h2>
     <div class="grid2x2">
-      <div class="card"><h3>Eigentümergeführt</h3><p>Immobiliengesellschaft mit Standorten in Stuttgart und Luzern – kurze Wege, direkte Verantwortung der Partner, aktiv in Deutschland und der Schweiz.</p></div>
-      <div class="card"><h3>Fokus auf nachgefragte Nutzungen</h3><p>Retail, Hospitality und Office in guten Lagen – wir konzentrieren uns auf Nutzungen mit belastbarer Nachfrage. Daraus entsteht messbarer Mehrwert für Eigentümer und Investoren.</p></div>
+      <div class="card"><h3>Eigentümergeführt</h3><p>Immobiliengesellschaft mit Standorten in Stuttgart und Luzern. In der Vermietung deutschlandweit an den Top-A-Standorten tätig – Hamburg, Berlin, München, Stuttgart – sowie in der Schweiz.</p></div>
+      <div class="card"><h3>Fokus auf nachgefragte Nutzungen</h3><p>Retail, Hospitality und innerstädtische Office-Flächen in 1A-Lagen – wir konzentrieren uns auf Nutzungen mit belastbarer Nachfrage. Daraus entsteht messbarer Mehrwert für Eigentümer und Investoren.</p></div>
       <div class="card"><h3>Betreiber-Know-how</h3><p>Eigene Hospitality-Sparte mit Hotels und Serviced Apartments in der Schweiz – wir kennen die Nutzerseite aus dem eigenen Betrieb und wissen, was Flächen leisten müssen.</p></div>
-      <div class="card"><h3>25'000+ m² Track Record</h3><p>Vermittelte Flächen in Deutschland und der Schweiz – überwiegend Off-Market, über das eigene Netzwerk aus Investoren, Betreibern und Nutzern.</p></div>
+      <div class="card"><h3>200'000+ m² Track Record</h3><p>Vermitteltes Flächenvolumen in der Vermietung deutlich über 200'000 m² – Retail, Hospitality und innerstädtische Office-Flächen. Dazu mehr als 1'000 Keys im Serviced-Apartment- und Hotelbereich vermittelt.</p></div>
     </div>
   </div>
   <div class="foot"><span class="brand-sm">AMANTHOS</span><span>Creating Tangible Added Value</span><span>2</span></div>
@@ -117,7 +120,7 @@
     <h2>Vier Disziplinen, ein Anspruch: greifbarer Mehrwert.</h2>
     <div class="grid2x2">
       <div class="card"><h3>Off-Market-Transaktionen</h3><p>Diskrete Vermittlung von Anlageliegenschaften ausserhalb des öffentlichen Marktes – direkt zwischen Eigentümern und geprüften Investoren aus unserem Netzwerk aus Versicherungen, Anlagestiftungen, Family Offices und Immobiliengesellschaften.</p></div>
-      <div class="card"><h3>Vermietung</h3><p>Erst- und Wiedervermietung von Retail-, Büro- und Spezialflächen. Direktansprache passender Nutzer statt Streuinserate – vom grossflächigen Fachmarkt bis zur innerstädtischen Bürofläche.</p></div>
+      <div class="card"><h3>Vermietung</h3><p>Erst- und Wiedervermietung von Retail-, Büro- und Spezialflächen. Direktansprache passender Nutzer statt Streuinserate – vom grossflächigen Fachmarkt bis zur innerstädtischen Bürofläche in 1A-Lage.</p></div>
       <div class="card"><h3>Verkauf</h3><p>Strukturierte Verkaufsprozesse für Geschäfts- und Wohnliegenschaften: Bewertung, Dossier, gezielte Investorenansprache und Verhandlung – bis zur Beurkundung.</p></div>
       <div class="card"><h3>Repositionierung</h3><p>Neuausrichtung von Liegenschaften mit Leerstand oder Nutzungspotenzial: Nutzungskonzept, Mietermix, Ertragsoptimierung und Begleitung der Umsetzung.</p></div>
     </div>
@@ -159,6 +162,7 @@
       <div>
         <h3>Hospitality &amp; Spezialflächen</h3>
         <table>
+          <tr><td class="who">Premier Inn</td><td class="where">Projektbegleitung</td><td class="size">ca. 250 Zimmer</td></tr>
           <tr><td class="who">limehome</td><td class="where">Projekt Porschestrasse, Stuttgart-Zuffenhausen</td><td class="size">ca. 120 Keys</td></tr>
           <tr><td class="who">B&amp;B Hotels</td><td class="where">Herzogenaurach</td><td class="size">120 Zimmer</td></tr>
           <tr><td class="who">limehome</td><td class="where">Projekt Göppingen</td><td class="size">ca. 60 Keys</td></tr>
@@ -181,8 +185,9 @@
     <div class="tophead"><div class="m">AMANTHOS</div><div class="s">INTERNATIONAL</div></div>
     <div class="kicker">Team</div>
     <h2>Milestones pro Kopf.</h2>
-    <div class="cols" style="grid-template-columns:1fr 1fr;gap:16mm">
+    <div class="cols">
       <div class="person">
+        <div class="avatar">BT</div>
         <h3>Bosko Trifunovic</h3>
         <div class="role">CEO &amp; Co-Founder</div>
         <p><b>Werdegang:</b><br>Background in Finanzen, 15 Jahre in der Immobilienbranche.</p>
@@ -197,6 +202,7 @@
         </ul>
       </div>
       <div class="person">
+        <div class="avatar">KW</div>
         <h3>Kaito Weingart</h3>
         <div class="role">Partner</div>
         <p><b>Werdegang:</b><br>Background in Steuern, 5 Jahre in der Immobilienbranche.</p>
@@ -204,6 +210,16 @@
         <ul style="margin:0 0 0 5mm;font-size:10pt;color:var(--muted);line-height:1.7">
           <li>Ayverdi's – Landmark-Vermietung Bahnhofplatz 3, Zürich HB</li>
           <li>Mehr als 40 Retail-Abschlüsse in der Schweiz an 1A-Lagen</li>
+        </ul>
+      </div>
+      <div class="person">
+        <div class="avatar">JN</div>
+        <h3>Julian Neyer</h3>
+        <div class="role">MSc</div>
+        <p><b>Werdegang:</b><br>Über 10 Jahre Erfahrung in der Immobilienbranche.</p>
+        <p style="margin-bottom:1.5mm"><b>Deals (Auswahl):</b></p>
+        <ul style="margin:0 0 0 5mm;font-size:10pt;color:var(--muted);line-height:1.7">
+          <li>Mehr als 20'000 m² Bürofläche vermietet</li>
         </ul>
       </div>
     </div>
