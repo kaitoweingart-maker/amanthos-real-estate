@@ -29,16 +29,24 @@
   h2{font-family:var(--serif);font-size:27pt;font-weight:500;margin-bottom:9mm;color:var(--navy-deep)}
   /* COVER */
   .cover{background:var(--navy);color:#fff}
-  .cover .inner{padding:22mm 26mm;height:100%;display:flex;flex-direction:column}
+  .cover-grid{display:grid;grid-template-columns:1fr 92mm;height:100%}
+  .cover .inner{padding:20mm 18mm 16mm 26mm;height:100%;display:flex;flex-direction:column;min-width:0}
+  .cover-img{position:relative;height:100%;overflow:hidden}
+  .cover-img img{width:100%;height:100%;object-fit:cover;display:block}
+  .cover-img::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,var(--navy) 0%,rgba(46,48,45,0) 30%)}
   .cover .mark{font-family:var(--serif);font-size:26pt;font-weight:500;letter-spacing:9px}
   .cover .sub{font-family:var(--serif);font-size:10pt;letter-spacing:7px;color:#b3afa8;margin-top:1mm}
   .cover .kicker{margin-top:auto;margin-bottom:4mm}
-  .cover h1{font-family:var(--serif);font-size:42pt;font-weight:500;line-height:1.1;max-width:220mm}
+  .cover h1{font-family:var(--serif);font-size:33pt;font-weight:500;line-height:1.12}
   .cover h1 em{font-style:italic;color:var(--gold)}
-  .cover p.lead{margin-top:7mm;font-size:12pt;font-weight:300;color:#c9c6c0;max-width:210mm;line-height:1.6}
-  .cover .facts{display:flex;gap:7mm;margin-top:11mm;margin-bottom:4mm;border-top:1px solid #4a4c47;padding-top:6mm;justify-content:space-between}
+  .cover p.lead{margin-top:6mm;font-size:10.5pt;font-weight:300;color:#c9c6c0;line-height:1.6}
+  .cover .facts{display:grid;grid-template-columns:repeat(3,1fr);gap:5mm 8mm;margin-top:9mm;margin-bottom:2mm;border-top:1px solid #4a4c47;padding-top:6mm}
   .cover .fact b{display:block;font-family:var(--serif);font-size:12.5pt;font-weight:600;white-space:nowrap}
   .cover .fact span{font-size:7.5pt;letter-spacing:1.5px;text-transform:uppercase;color:#a5a29b}
+  /* IMAGE BANDS */
+  .imgband{position:relative;height:38mm;overflow:hidden;border:1px solid var(--line);margin-top:7mm}
+  .imgband img{width:100%;height:100%;object-fit:cover;display:block}
+  .imgband .cap{position:absolute;left:0;right:0;bottom:0;background:rgba(26,28,25,.72);color:#fff;font-size:8.5pt;padding:2.2mm 5mm;letter-spacing:.5px;font-weight:300}
   /* CARDS */
   .grid2x2{display:grid;grid-template-columns:1fr 1fr;gap:7mm}
   .card{background:var(--off);border:1px solid var(--line);border-top:2px solid var(--gold);padding:9mm 9mm}
@@ -80,19 +88,22 @@
 
 <!-- SLIDE 1: COVER -->
 <div class="slide cover">
-  <div class="inner">
-    <div><div class="mark">AMANTHOS</div><div class="sub">INTERNATIONAL</div></div>
-    <div class="kicker">Real Estate</div>
-    <h1>Immobilien. Diskret vermittelt, <em>messbar verwertet.</em></h1>
-    <p class="lead">Eigentümergeführte Immobiliengesellschaft mit Standorten in Stuttgart und Luzern. Unser Mehrwert entsteht durch Fokus: nachgefragte Nutzungen – Retail, Hospitality und innerstädtische Office-Flächen in 1A-Lagen. In der Vermietung sind wir deutschlandweit an den Top-A-Standorten tätig – Hamburg, Berlin, München, Stuttgart. Wir begleiten Eigentümer, Investoren und Nutzer bei Off-Market-Transaktionen, Vermietung, Verkauf und Repositionierung – in Deutschland und der Schweiz.</p>
-    <div class="facts">
-      <div class="fact"><b>DE &amp; CH</b><span>Stuttgart · Luzern</span></div>
-      <div class="fact"><b>Retail · Hospitality · Office</b><span>innerstädtisch · 1A-Lagen</span></div>
-      <div class="fact"><b>200'000+ m²</b><span>vermitteltes Flächenvolumen</span></div>
-      <div class="fact"><b>1'000+ Keys</b><span>Serviced Apartments &amp; Hotels</span></div>
-      <div class="fact"><b>Off-Market</b><span>eigenes Netzwerk</span></div>
-      <div class="fact"><b>Inhabergeführt</b><span>direkte Verantwortung</span></div>
+  <div class="cover-grid">
+    <div class="inner">
+      <div><div class="mark">AMANTHOS</div><div class="sub">INTERNATIONAL</div></div>
+      <div class="kicker">Real Estate</div>
+      <h1>Immobilien. Diskret vermittelt, <em>messbar verwertet.</em></h1>
+      <p class="lead">Eigentümergeführte Immobiliengesellschaft mit Standorten in Stuttgart und Luzern. Unser Mehrwert entsteht durch Fokus: nachgefragte Nutzungen – Retail, Hospitality und innerstädtische Office-Flächen in 1A-Lagen. In der Vermietung sind wir deutschlandweit an den Top-A-Standorten tätig – Hamburg, Berlin, München, Stuttgart. Wir begleiten Eigentümer, Investoren und Nutzer bei Off-Market-Transaktionen, Vermietung, Verkauf und Repositionierung – in Deutschland und der Schweiz.</p>
+      <div class="facts">
+        <div class="fact"><b>DE &amp; CH</b><span>Stuttgart · Luzern</span></div>
+        <div class="fact"><b>Retail · Hospitality · Office</b><span>innerstädtisch · 1A-Lagen</span></div>
+        <div class="fact"><b>200'000+ m²</b><span>vermitteltes Flächenvolumen</span></div>
+        <div class="fact"><b>1'000+ Keys</b><span>Serviced Apartments &amp; Hotels</span></div>
+        <div class="fact"><b>Off-Market</b><span>eigenes Netzwerk</span></div>
+        <div class="fact"><b>Inhabergeführt</b><span>direkte Verantwortung</span></div>
+      </div>
     </div>
+    <div class="cover-img"><img src="images/frankfurt-sm.jpg" alt=""></div>
   </div>
 </div>
 
@@ -107,6 +118,10 @@
       <div class="card"><h3>Fokus auf nachgefragte Nutzungen</h3><p>Retail, Hospitality und innerstädtische Office-Flächen in 1A-Lagen – wir konzentrieren uns auf Nutzungen mit belastbarer Nachfrage. Daraus entsteht messbarer Mehrwert für Eigentümer und Investoren.</p></div>
       <div class="card"><h3>Betreiber-Know-how</h3><p>Eigene Hospitality-Sparte mit Hotels und Serviced Apartments in der Schweiz – wir kennen die Nutzerseite aus dem eigenen Betrieb und wissen, was Flächen leisten müssen.</p></div>
       <div class="card"><h3>200'000+ m² Track Record</h3><p>Vermitteltes Flächenvolumen in der Vermietung deutlich über 200'000 m² – Retail, Hospitality und innerstädtische Office-Flächen. Dazu mehr als 1'000 Keys im Serviced-Apartment- und Hotelbereich vermittelt.</p></div>
+    </div>
+    <div class="imgband">
+      <img src="images/apartment-sm.jpg" alt="" style="object-position:center 62%">
+      <div class="cap">Amanthos Living – Serviced Apartments aus der eigenen Hospitality-Sparte in der Schweiz</div>
     </div>
   </div>
   <div class="foot"><span class="brand-sm">AMANTHOS</span><span>Creating Tangible Added Value</span><span>2</span></div>
@@ -197,7 +212,7 @@
           <li>B&amp;B Hotels – Herzogenaurach (120 Zimmer)</li>
           <li>Bob W – Stuttgart &amp; Frankfurt a. M.</li>
           <li>Myspa – Mannheim &amp; Stuttgart (3'300 m²)</li>
-          <li>Mehr als 500 Keys vermietet im Bereich Hospitality</li>
+          <li>Mehr als 1'000 Keys vermietet im Bereich Hospitality</li>
           <li>Mehr als 100 Retail-Off-Market-Abschlüsse</li>
         </ul>
       </div>
@@ -263,6 +278,9 @@
         <h3>Amanthos Services GmbH</h3><div class="role">Stuttgart</div>
         <p>Löffelstrasse 22–24<br>70597 Stuttgart<br>www.amanthos.com · info@amanthos.com</p>
       </div>
+    </div>
+    <div class="imgband" style="height:74mm;margin-top:14mm;border-color:#3a3c38">
+      <img src="images/team.jpg" alt="" style="object-position:center bottom">
     </div>
   </div>
   <div class="foot" style="border-color:#3a3c38;color:#8a877f"><span class="brand-sm" style="color:#fff">AMANTHOS</span><span>© 2026 Amanthos Services GmbH · Creating Tangible Added Value</span><span>7</span></div>
